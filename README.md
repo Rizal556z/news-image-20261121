@@ -15,8 +15,10 @@ killed, 60 wounded), the COP31 climate talks running into overtime in
 Antalya with fossil fuels missing from the draft deal, and Mexico's
 capture of cartel boss "El Chapo Isidro" with US intelligence help,
 with a numbers strip (60 wounded, Nasdaq −5.28%, S&P 500 −3.7%, $4tn
-wiped, 6.7 quake, 13 dead in Manipur), a 10-story grid, a UTC timeline
-and a numbered list of stories 14–33 below them.
+wiped, 6.7 quake, 13 dead in Manipur), a 10-story grid, a UTC timeline,
+a "Where it happened" world map with region counts, and a numbered list
+of stories 14–33 below them. V2 is denser than v1: it adds the map and
+fills the two gaps in v1's list (items 18 and 27).
 
 ## How it works
 
