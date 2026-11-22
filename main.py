@@ -13,7 +13,6 @@ import hashlib
 import os
 import struct
 import sys
-import tempfile
 
 POSTER_NAME = "entry.png"
 WANT_WIDTH = 1024
@@ -70,17 +69,9 @@ def check_poster(blob):
 def place_copy(blob, dest_dir):
     os.makedirs(dest_dir, exist_ok=True)
     dest = os.path.join(dest_dir, POSTER_NAME)
-    handle, tmp = tempfile.mkstemp(dir=dest_dir, prefix=".entry-")
-    try:
-        with os.fdopen(handle, "wb") as fh:
-            fh.write(blob)
-        os.replace(tmp, dest)
-    except BaseException:
-        try:
-            os.unlink(tmp)
-        except OSError:
-            pass
-        raise
+    with open(dest, "wb") as fh:
+        fh.write(blob)
+    os.chmod(dest, 0o644)
     return dest
 
 
