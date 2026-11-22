@@ -1,0 +1,6 @@
+# Local-only records, never part of the entry.
+submission.md
+preview*.png
+media-generation-*
+out/
+out2/
